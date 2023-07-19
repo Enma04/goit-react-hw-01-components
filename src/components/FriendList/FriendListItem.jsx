@@ -1,15 +1,16 @@
 import React from 'react';
+import {Fragment} from 'react';
 import './FriendList.css';
 //import PropTypes from "prop-types";
 
-function FriendListItem() {
+export default function FriendListItem({avatar, name, isOnline}) {
     return (
-        <li key="1" class="item">
-            <span class="status">Hola</span>
-            <img class="avatar" src="" alt="User avatar" width="48" />
-            <p class="name">arriba esta la imagen de prueba</p>
-        </li>
+        <Fragment>
+            <li key="{id}" class="FriendItem">
+                <span class="FriendStatus">Hola</span>
+                <img class="FriendAvatar" src={avatar} alt="User avatar" width="48" />
+                <p class="FriendName"> {name} </p>
+            </li>
+        </Fragment>
     );
 }
-
-export default FriendListItem;
