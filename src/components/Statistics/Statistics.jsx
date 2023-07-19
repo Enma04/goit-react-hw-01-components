@@ -1,8 +1,8 @@
 import React from 'react';
-//import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import './Statistics.css'
 
-function Statistics({title, stats}, Children) {
+function Statistics({title, stats}) {
     //Fujncion que devuelve una lista de licon datos
     return (
         <section className='statistics'>
@@ -22,7 +22,8 @@ function Statistics({title, stats}, Children) {
 }
 
 Statistics.propTypes = {
-    
+    title: PropTypes.string,
+    stats: PropTypes.array,
 }
 
 export default Statistics;
