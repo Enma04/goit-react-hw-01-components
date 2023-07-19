@@ -12,6 +12,7 @@ function Statistics({title, stats}, Children) {
                 {stats.map( (item) => (
                     <li key={item.id} className='item'>
                         <span className="label"> {item.label} </span>
+                        <br />
                         <span className="percentage"> {item.percentage} </span>
                     </li>
                 ))}
