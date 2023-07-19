@@ -8,10 +8,10 @@ export default function FriendList({friends, children}) {
     return (
         <ul className='friend-list'>
             {
-                friends.map( friend => {
+                friends.map( friend => (
                     <FriendListItem avatar={friend.avatar} name={friend.name} />
-                })
-            },
+                ))
+            }
             {children}
         </ul>
         
