@@ -3,6 +3,7 @@ import {Fragment} from 'react';
 import './FriendList.css';
 //import PropTypes from "prop-types";
 
+
 export default function FriendListItem({avatar, name, isOnline}) {
     return (
         <Fragment>
