@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from "prop-types";
+//import PropTypes from "prop-types";
 import './Statistics.css'
 
 function Statistics({title, stats}, Children) {
@@ -10,7 +10,7 @@ function Statistics({title, stats}, Children) {
 
             <ul className='statsList'>
                 {stats.map( (item) => (
-                    <li className='item'>
+                    <li key={item.id} className='item'>
                         <span className="label"> {item.label} </span>
                         <span className="percentage"> {item.percentage} </span>
                     </li>
