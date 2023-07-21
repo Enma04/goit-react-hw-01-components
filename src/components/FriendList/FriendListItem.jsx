@@ -1,7 +1,7 @@
 import React from 'react';
 import {Fragment} from 'react';
 import './FriendList.css';
-//import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
 
 export default function FriendListItem({avatar, name, isOnline}) {
@@ -14,4 +14,10 @@ export default function FriendListItem({avatar, name, isOnline}) {
             </li>
         </Fragment>
     );
+}
+
+FriendListItem.propTypes = {
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool,
 }

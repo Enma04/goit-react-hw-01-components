@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import './Profile.css';
+import {Stats} from './Profile-styled';
 
 function Profile( 
     {
@@ -10,8 +11,7 @@ function Profile(
         location,
         stats:{followers, views, likes}
         //stats
-    },
-    Children ) {
+    }) {
         return (
             <div className="profile">
                 <div className="description">
@@ -21,7 +21,7 @@ function Profile(
                     <p>{location}</p>
                 </div>
 
-                <ul className ="stats">
+                <Stats>
                     <li>
                         <span className="label">Followers: </span>
                         <br />
@@ -37,17 +37,17 @@ function Profile(
                         <br />
                         <span className="quantity">{likes}</span>
                     </li>
-                </ul>
+                </Stats>
             </div>
             
         );
 }
 
 Profile.propTypes = {
-    src: PropTypes.string,
-    username: PropTypes.string,
-    tag: PropTypes.string,
-    location: PropTypes.string,
+    src: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
 }
 
 export default Profile;
