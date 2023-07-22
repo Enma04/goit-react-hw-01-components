@@ -22,5 +22,5 @@ export const Description = styled.div
 
 export const DescriptionP = styled.p
     `margin: 5px;
-    color: red;`;
+    color: rgb(92, 29, 29);`;
 
