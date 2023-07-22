@@ -6,10 +6,14 @@ import FriendListItem from './FriendListItem';
 export default function FriendList({friends, children}) {
     console.log(friends);
     return (
-        <ul key="listaAmigos" className='friend-list'>
+        <ul className='friendList'>
             {
                 friends.map( (friend, index) => (
-                    <FriendListItem key={index} index={index} avatar={friend.avatar} name={friend.name} />
+                    <FriendListItem key={index}
+                                    index={index}
+                                    avatar={friend.avatar}
+                                    name={friend.name}
+                                    isOnline={friend.isOnline} />
                 ))
             }
             {children}

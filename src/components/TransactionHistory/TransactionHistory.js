@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './transactionHistory.css'
+import EstilosTransaction from './TransactionHistory.module.css';
 
 const TransactionHistory = ({ items }) => {
   return (
-    <table className="transactionhistory">
+    <table className={EstilosTransaction.transactionhistory}>
       <thead>
         <tr>
           <th>Type</th>
@@ -25,6 +25,7 @@ const TransactionHistory = ({ items }) => {
     </table>
   );
 };
+
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({

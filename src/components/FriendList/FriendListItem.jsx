@@ -8,7 +8,8 @@ export default function FriendListItem({index, avatar, name, isOnline}) {
     return (
         <Fragment>
             <li key={index+1} className="FriendItem">
-                <span className="FriendStatus">Hola</span>
+            <span className="FriendStatus" style={{ backgroundColor: isOnline ? 'green' : 'red' }}>
+                </span>
                 <img className="FriendAvatar" src={avatar} alt="User avatar" width="48" />
                 <p className="FriendName"> {name} </p>
             </li>
