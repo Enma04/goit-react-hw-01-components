@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import './Statistics.css'
+import estilos from './Statistics.module.css';
 
 function Statistics({title, stats}) {
     //Fujncion que devuelve una lista de licon datos
     return (
-        <section className='statistics'>
-            <h3 className='title'>{title}</h3>
+        <section className={estilos.statistics}>
+            <h3 className={estilos.title}>{title}</h3>
 
-            <ul className='statsList'>
+            <ul className={estilos.statsList}>
                 {stats.map( (item) => (
-                    <li key={item.id} className='item'>
+                    <li key={item.id} className={estilos.item}>
                         <span className="label"> {item.label} </span>
                         <br />
                         <span className="percentage"> {item.percentage} </span>
