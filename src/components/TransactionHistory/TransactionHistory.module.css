@@ -3,22 +3,21 @@
     margin-left: 10px;
     border-collapse: collapse;
     margin-bottom: 15px;
-    background-color: beige;
+    background-color: rgb(210, 177, 106);
     
-  }
-  
-  .transactionhistory th,
-  .transactionhistory td {
+}
+    
+.transactionhistory th,
+.transactionhistory td {
     padding: 8px;
     border: 1px solid gray;
-  }
-  
-  .transactionhistory th {
+    text-align: center;
+}
+    
+.transactionhistory th {
     font-weight: bold;
     color: whitesmoke;
     text-transform: uppercase;
-    background-color: cyan;
+    background-color: rgb(201, 95, 20);
     text-transform: uppercase;
-  }
-  
- 
+}
