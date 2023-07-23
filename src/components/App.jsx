@@ -1,10 +1,8 @@
-// COMPONENTES
-import Profile from "./Profile/Profile";
-import Statistics from "./Statistics/Statistics";
-import TransactionHistory from "./TransactionHistory/TransactionHistory";
-import FriendList from "./FriendList/FriendList";
+import Profile from './Profile/Profile';
+import Statistics from './Statistics/Statistics';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
+import FriendList from './FriendList/FriendList';
 
-// DATA DE JSON'S
 import user from '../data/user.json';
 import stats from '../data/statistics.json';
 import friends from '../data/friends.json';
@@ -20,7 +18,7 @@ export const App = () => {
         alignItems: 'center',
         flexDirection: 'column',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
       <Profile
