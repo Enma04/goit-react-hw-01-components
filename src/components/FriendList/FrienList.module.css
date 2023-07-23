@@ -20,10 +20,10 @@
 .FriendAvatar{
     display: inline-flex;
     margin-right: 30px;
-    margin-top: 10px;
     height: 70px;
     width: 70px;
     margin-top: 15px;
+    margin-left: 15px;
 }
 .FriendName{
     display: inline-block;
