@@ -30,7 +30,7 @@ export default function Profile({
   return (
     <ProfileStyled>
       <Description>
-        <img src={src} alt="user avatar" className="avatar" width="250px" />
+        <img src={src} alt="user avatar" width="250px" />
         <DescriptionP>{username}</DescriptionP>
         <DescriptionP>@{tag}</DescriptionP>
         <DescriptionP>{location}</DescriptionP>
@@ -38,19 +38,19 @@ export default function Profile({
 
       <Stats>
         <li>
-          <span className="label">Followers: </span>
+          <span>Followers: </span>
           <br />
-          <span className="quantity"> {followers} </span>
+          <span> {followers} </span>
         </li>
         <li>
-          <span className="label">Views: </span>
+          <span>Views: </span>
           <br />
-          <span className="quantity">{views}</span>
+          <span>{views}</span>
         </li>
         <li>
-          <span className="label">Likes: </span>
+          <span>Likes: </span>
           <br />
-          <span className="quantity">{likes}</span>
+          <span>{likes}</span>
         </li>
       </Stats>
     </ProfileStyled>
