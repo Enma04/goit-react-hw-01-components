@@ -6,7 +6,7 @@ function Statistics({title, stats}) {
     //Fujncion que devuelve una lista de licon datos
     return (
         <section className={estilos.statistics}>
-            <h3 className={estilos.title}>{title}</h3>
+            { ( title ) && ( <h3 className={estilos.title}>{title}</h3> ) }
 
             <ul className={estilos.statsList}>
                 {stats.map( (item) => (
@@ -22,7 +22,7 @@ function Statistics({title, stats}) {
 }
 
 Statistics.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     stats: PropTypes.array.isRequired,
 }
 

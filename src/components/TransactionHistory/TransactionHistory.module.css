@@ -3,14 +3,13 @@
     margin-left: 10px;
     border-collapse: collapse;
     margin-bottom: 15px;
-    background-color: rgb(210, 177, 106);
-    
+    background-color: rgb(254, 233, 188);
 }
     
 .transactionhistory th,
 .transactionhistory td {
-    padding: 8px;
-    border: 1px solid gray;
+    padding: 12px;
+    border: 1.5px solid gray;
     text-align: center;
 }
     
